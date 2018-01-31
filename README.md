@@ -1,32 +1,47 @@
-# Horloge animée
+<h1 align="center">
+  <img alt="animated-clock" width="652" src="https://jclerc.github.io/assets/repos/banner/animated-clock.jpg">
+  <br>
+</h1>
 
-### Navigateur recommandé:
- - Firefox
+<p align="center">
+  <img alt="made for: fun" src="https://jclerc.github.io/assets/static/badges/made-for/fun.svg">
+  <img alt="language: html/css" src="https://jclerc.github.io/assets/static/badges/language/html-css.svg">
+  <img alt="made in: 2015" src="https://jclerc.github.io/assets/static/badges/made-in/2015.svg">
+  <br>
+  <sub>An animated clock using html/css, with a 3D view.</sub>
+</p>
+<br>
 
-### Fonctionnalités CSS:
- - Design complet de l'horloge (aucune image)
- - Aiguilles animées avec deux animations:
-   1. rotate: fait le tour complet en 60s, 3600s, ou 43200s (12h)
-   2. ticker: fait l'effet de mouvement de l'aiguille chaque seconde / minute
- - Passage en vue éclatée avec une classe
- - Design et animation des boutons
+## Live demo
 
-### Fonctionnalités JS:
- - Affiche l'heure courante
- - Fonctions Javascript pour changer le point de vue éclaté / le temps:
-   1. setTime(hours, minutes, seconds);
-   2. setView(view); avec view: "bottom", "middle" ou "top"
+See the project here: [jclerc.github.io/animated-clock](https://jclerc.github.io/animated-clock/)
 
-### Problèmes:
- - Sous Chrome, la vue éclatée a quelques glitchs visuels
- - Sous Safari, on ne peux pas changer plus d'une fois l'heure via JS
- - Lors de la vue normale, les éléments sont en fait décalés de quelques pixels sur l'axe Z pour les empêcher de se chevaucher sous Chrome quand on passe en 3D
+## Features
 
-### Notes:
- - L'animation vue éclatée était au départ sur le hover de l'horloge, mais ça causait trop de glitch visuels sur Chrome
- - Changer l'heure n'anime pas les aiguilles, car en fait les aiguilles ne bougent pas, seul l'animation-delay est modifié
+- [x] Clock hands animations
+- [x] Play/pause, change time
+- [x] Click gear button to show 3D view
 
-### Inspirations:
- - https://dribbble.com/shots/1256723-Free-Clock-Flat-Icon-PSD
- - https://dribbble.com/shots/1015985-Clock
- - http://montre24.com/postimg/ExplodedViewSonataMovement(1).jpg
+## Stack used
+
+- HTML `5` / CSS `3`
+- JavaScript `ES5`
+
+## Getting started
+
+#### Requirements
+
+- None
+
+#### Installation
+
+```sh
+git clone https://github.com/jclerc/animated-clock.git
+cd animated-clock
+open src/index.html
+```
+
+## Notes
+
+- Best viewed using Firefox (Chrome doesn't render 3D view correctly)
+- Inspired by [dribbble.com/shots/1015985-Clock](https://dribbble.com/shots/1015985-Clock)
